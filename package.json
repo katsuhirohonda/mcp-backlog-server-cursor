@@ -1,11 +1,11 @@
 {
-  "name": "mcp-simple-server-cursor",
+  "name": "mcp-backlog-server-cursor",
   "version": "0.1.0",
-  "description": "Simple MCP Server",
+  "description": "Backlog MCP Server",
   "private": true,
   "type": "module",
   "bin": {
-    "mcp-simple-server-cursor": "./build/index.js"
+    "mcp-backlog-server-cursor": "./build/index.js"
   },
   "files": [
     "build"
