@@ -55,19 +55,12 @@ function listResources() {
 // リソースの内容を取得
 async function readResource(uri: string) {
   if (uri === "simple://greeting") {
-    // 環境変数 SAMPLE_ENV を取得
-    const sampleEnv = process.env.SAMPLE_ENV;
-    
-    // SAMPLE_ENV がない場合はエラーを投げる
-    if (!sampleEnv) {
-      throw new Error("環境変数 SAMPLE_ENV が設定されていません");
-    }
     
     return {
       contents: [{
         uri,
         mimeType: "text/plain",
-        text: `こんにちは！シンプルなMCPサーバーへようこそ。\n環境変数 SAMPLE_ENV: ${sampleEnv}`
+        text: `こんにちは！Backlog MCPサーバーへようこそ。`
       }]
     };
   }
